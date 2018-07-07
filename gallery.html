@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Valley of the Angels Sicily</title>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/gallery.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Valley of the Angels</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="gallery.html">Gallery</a>
+              <a class="dropdown-item" href="#footer">Contact</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Reviews</a> -->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <img id="myImg" src="resources/images/archers.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          <img id="myImg" src="resources/images/horses.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          <img id="myImg" src="resources/images/man-on-horse.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img id="myImg" src="resources/images/inside.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          <img id="myImg" src="resources/images/cactus.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          <img id="myImg" src="resources/images/sea-2.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          <img id="myImg" src="resources/images/sunset.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img id="myImg" src="resources/images/sea.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          <img id="myImg" src="resources/images/well.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+          <img id="myImg" src="resources/images/horse-and-landscape.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+          <img id="myImg" src="resources/images/cat-on-post.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img id="myImg" src="resources/images/table.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+          <img id="myImg" src="resources/images/horse-and-trees.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+          <img id="myImg" src="resources/images/door.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 14</div>
+          <img src="resources/images/archers.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 14</div>
+          <img src="resources/images/horses.jpg" style="width:100%" alt="nature">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 14</div>
+          <img src="resources/images/man-on-horse.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 14</div>
+          <img src="resources/images/inside.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 14</div>
+          <img src="resources/images/cactus.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 14</div>
+          <img src="resources/images/sea-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 14</div>
+          <img src="resources/images/sunset.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 14</div>
+          <img src="resources/images/sea.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 14</div>
+          <img src="resources/images/well.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 14</div>
+          <img src="resources/images/horse-and-landscape.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 14</div>
+          <img src="resources/images/cat-on-post.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">12 / 14</div>
+          <img src="resources/images/table.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">13 / 14</div>
+          <img src="resources/images/horse-and-trees.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">14 / 14</div>
+          <img src="resources/images/door.jpg" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <!-- <div class="column">
+          <img class="demo" src="resources/images/archers.jpg" onclick="currentSlide(1)" alt="Nature">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/horses.jpg" onclick="currentSlide(2)" alt="Snow">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/man-on-horse.jpg" onclick="currentSlide(3)" alt="Mountains">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/inside.jpg" onclick="currentSlide(4)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/cactus.jpg" onclick="currentSlide(5)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/sea-2.jpg" onclick="currentSlide(6)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/sunset.jpg" onclick="currentSlide(7)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/sea.jpg" onclick="currentSlide(8)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/well.jpg" onclick="currentSlide(9)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/horse-and-landscape.jpg" onclick="currentSlide(10)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/cat-on-post.jpg" onclick="currentSlide(11)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/able.jpg" onclick="currentSlide(12)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/horse-and-trees.jpg" onclick="currentSlide(13)" alt="Lights">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="resources/images/door.jpg" onclick="currentSlide(14)" alt="Lights">
+        </div> -->
+      </div>
+    </div>
+
+    <div id="footer" class="footer container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Find Us</h4>
+          <p>Alia, Palermo, Sicily</p>
+          <p>Call +39 347 690 4449</p>
+          <p>Email: valleyoftheanglessicily@gmail.com</p>
+        </div>
+        <div class="col-lg-6">
+          <h4>Check out our Facebook page</h4>
+          <a href="https://www.facebook.com/Valleyoftheangelssicily/" target="_blank">
+            <i class="fab fa-facebook-square fa-5x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="valley.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
