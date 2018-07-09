@@ -19,7 +19,7 @@
   height: auto;
   overflow: hidden;
   text-align: center;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+  border: 2px solid #b3ecff;
   padding-top: 20px;
   margin-bottom: 40px;
 }
@@ -44,7 +44,8 @@
   max-width: 100%;
   height: auto;
   display: block;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+  border: 2px solid #b3ecff;
+  padding: 10px;
 }
 
 .footer {
